@@ -10,4 +10,23 @@ public class BankAccount {
         this.balance = initialBalance;
     }
 
+
+    public void deposit (double amount){
+
+
+    }
+
+    public void withdraw{
+        Double amount = 0.0;
+        double result = balance - amount;
+    }
+
+    public Double getBalance() {
+        return balance;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
 }
