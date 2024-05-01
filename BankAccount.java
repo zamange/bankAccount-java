@@ -11,15 +11,7 @@ public class BankAccount {
     }
 
 
-    public void deposit (double amount){
 
-
-    }
-
-    public void withdraw{
-        Double amount = 0.0;
-        double result = balance - amount;
-    }
 
     public Double getBalance() {
         return balance;
