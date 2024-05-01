@@ -4,4 +4,10 @@ public class BankAccount {
     private String accountNumber;
     private Double balance;
 
+    //constructor
+    public BankAccount ( String accountNumber, Double initialBalance) {
+        this.accountNumber = accountNumber;
+        this.balance = initialBalance;
+    }
+
 }
