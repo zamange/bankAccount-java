@@ -14,20 +14,30 @@ public class BankAccount {
     //deposit method
     public void deposit(double amount){
         if (amount > 0){
-            double result = balance + amount;
-            System.out.println(result + " has been successfully deposited into " + accountNumber);
+            balance += amount;
+            System.out.println(amount + " has been successfully deposited into " + accountNumber);
+            System.out.print("New balance: "+ balance);
         }
         else{
             System.out.println("Invalid deposit amount.");
+            System.out.print("Balance: "+ balance);
         }
     }
 
-    public Double getBalance() {
-        return balance;
+    //withdraw method
+    public void withdraw(double amount){
+        if (amount > 0 && amount <= balance){
+            balance -= amount;
+            System.out.println(amount + "has been successfully withdraw from " + accountNumber);
+            System.out.print("New balance: "+ balance);
+        }
+        else {
+            System.out.println("Invalid withdrawal amount.");
+            System.out.println("Balance "+ balance);
+        }
+
     }
 
-    public String getAccountNumber() {
-        return accountNumber;
-    }
+
 
 }
